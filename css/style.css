@@ -305,3 +305,73 @@ a.icon i{
     color: #333;
 }
 /*End choose*/
+/*Work start */
+.whowork-page{
+    background: url('../img/workbg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+}
+
+.team-box{
+    position: relative;
+}
+.team-box img{
+    width: 100%;
+}
+.team-details{
+    background: #fff;
+    color: #8e8e8e;
+    padding: 10px 20px;
+}
+.team-details h4{
+    font-size: 18px;font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.team-details p{
+    font-size: 16px;font-weight: regular;
+    margin-bottom: 0;
+}
+.overlay-icon{
+    content: "";
+    position: absolute;
+    top:40px;left: 0;
+    width: 18%;
+    /*height: 100%;*/
+    background: #fff;
+    text-align: center;
+    display: none;
+    transition: .4s linear;
+}
+.overlay-icon a{
+    color: #8e8e8e;
+    font-size: 26px;
+}
+.team-box:hover .overlay-icon{
+    display: block;
+}
+.team-box a:hover{
+    color: #333;
+}
+.team-box li:hover{
+    border-right: 1px solid #8e8e8e;
+}
+
+/*Work end */
+/*Buy Page*/
+.buy-page{
+    background: #f8f8f8;
+    padding: 22px 0px;
+}
+.buy-page p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+.buy-now{
+    border: 1px solid #333;background:transparent;
+}
+/*End buy page*/
