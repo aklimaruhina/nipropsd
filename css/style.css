@@ -284,3 +284,24 @@ a.icon i{
 }
 
 /*Recent work end*/
+/*Why choose us*/
+.box-container{
+    color: #8e8e8e;
+    border-bottom: 2px solid #8e8e8e;
+    margin-bottom: 30px;
+}
+.icon-box{margin-bottom: 20px;}
+.icon-box i{
+    font-size: 48px;
+}
+.icon-box h4{
+    font-size: 18px;font-weight: bold;
+}
+.icon-box p{
+    padding-bottom: 30px;
+}
+.box-container:hover{
+    border-color: #333;
+    color: #333;
+}
+/*End choose*/
