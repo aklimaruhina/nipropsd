@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap');
 *{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -375,3 +375,50 @@ a.icon i{
     border: 1px solid #333;background:transparent;
 }
 /*End buy page*/
+/*Footer page start here */
+footer{
+    background: url('../img/footer-bg.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.top_footer{
+    margin-bottom: 90px;
+}
+.footer .work-title h4{margin-bottom: 30px;}
+.footer .work-title p{
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.footer-social{
+    margin-bottom: 0;
+}
+.footer-social li a{
+    color: #fff;
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border: 1px solid #fff;
+    text-align: center;
+    /*margin-right: 12px;*/
+}
+.footer-social li a:hover{
+    background: #fff;
+    color: #333;
+}
+.copy{
+    
+    font-weight: 400;
+    color: #fff;
+}
+.footer-link a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-link .list-inline-item:not(:last-child){
+    margin-right: 38px;
+}
+/*Footer page end her */
