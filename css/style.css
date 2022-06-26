@@ -359,6 +359,69 @@ a.icon i{
 }
 
 /*Work end */
+/*Price page start here */
+.pricing-page{
+    padding-bottom: 90px;
+}
+.border-box{
+    border: 1px solid #8e8e8e;
+    padding: 0 25px 30px 22px;
+    color: #8e8e8e;
+    padding-bottom: 14px;
+}
+.price-box{
+    display: inline-block;
+    margin-top: -15px;
+    overflow: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    background: #fff;
+}
+.price-title{
+    font-size: 18px;
+    font-weight: 900;
+    color: #333;
+    text-transform: uppercase;
+
+}
+.price-content{
+
+}
+.pricing-card-title{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 30px;
+}
+.pricing-card-title small{
+    font-size: 18px;
+    color: #8e8e8e;
+    text-transform: capitalize;
+}
+.price-content ul li{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #8e8e8e;
+    border-color: #8e8e8e;
+    padding-bottom: 15px;
+}
+.price-btn{
+    border-radius: 0;
+    border-color: #8e8e8e;
+    color: #8e8e8e;
+}
+.price-btn i{
+    padding-left: 10px;
+}
+.price-btn:hover{
+    color: #333;
+    border-color: #333;
+    font-weight: 700;
+    background: transparent;
+}
+/*Price page end here */
 /*Buy Page*/
 .buy-page{
     background: #f8f8f8;
@@ -375,6 +438,7 @@ a.icon i{
     border: 1px solid #333;background:transparent;
 }
 /*End buy page*/
+
 /*Contact Us page */
 .contact-page{
     margin-top: 30px;
