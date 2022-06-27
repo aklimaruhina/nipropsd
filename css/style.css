@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto:wght@400;500;700&display=swap');
 *{
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -14,10 +12,19 @@
 }
 body {
   scroll-behavior: smooth;
-  font-size: 16px;
-    font-weight: 400;
-    color: #000;
+  font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #8e8e8e;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #8e8e8e;
+}
+
 ul{margin-left: 0;padding-left: 0}
 ul li{list-style: none;}
 
@@ -158,13 +165,10 @@ button.nextb{
     margin-bottom: 40px;
 }
 .intro-title h4{
-    font-size: 30px;font-weight: 400;
+    font-size: 30px;
+    font-weight: 400;
     color: #333;
     margin-bottom: 40px;
-}
-p{
-    font-family: 'Roboto', sans-serif;
-    font-family: 16px;
 }
 p.intro-para{
     
@@ -233,7 +237,6 @@ p.intro-para{
     font-size: 30px;color: #333;
 }
 .about-content p{
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #8e8e8e;
@@ -280,20 +283,33 @@ p.intro-para{
 .box-card{
     position: relative;
     margin-bottom: 30px;
+    transition: .3s;
+}
+.box-card img{
+    width: 100%;
 }
 a.icon{
     position: absolute;
     color: #fff;
-    left: 48%;
-    top: 35%;
+    left: 50%;
+    top: 31%;
+    transform: translateX(-50%);
+
+}
+a.icon{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 4px 7px;
 }
 a.icon i{
     font-size: 34px;
+    
 }
 .project-desc{
     background: #fff;
     padding: 10px 20px;
-    bottom: 0;
+    bottom: -30px;
+    transition: .3s;
     width: 100%;
     position: absolute;
     cursor: default;
@@ -315,12 +331,13 @@ a.icon i{
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    overflow: hidden;
+    opacity: 0;
     transition: .5s ease;
     cursor: pointer;
 }
-.box-card:hover .overlay_content{
-    display: block;
+.box-card:hover .overlay_content,.box-card:hover .project-desc{
+    opacity: 1;bottom: 0;
 }
 
 /*Recent work end*/
@@ -355,6 +372,7 @@ a.icon i{
 
 .team-box{
     position: relative;
+    overflow: hidden;
 }
 .team-box img{
     width: 100%;
@@ -376,12 +394,12 @@ a.icon i{
 .overlay-icon{
     content: "";
     position: absolute;
-    top:40px;left: 0;
+    top:40px;left: -40px;
     width: 18%;
     /*height: 100%;*/
     background: #fff;
     text-align: center;
-    display: none;
+    opacity: 0;
     transition: .4s linear;
 }
 .overlay-icon a{
@@ -389,7 +407,9 @@ a.icon i{
     font-size: 26px;
 }
 .team-box:hover .overlay-icon{
-    display: block;
+    /*display: block;*/
+    left: 0;
+    opacity: 1;
 }
 .team-box a:hover{
     color: #333;
@@ -403,25 +423,26 @@ a.icon i{
 .pricing-page{
     padding-bottom: 90px;
 }
-.border-box{
+.price-box{
     border: 1px solid #8e8e8e;
-    padding: 0 25px 30px 22px;
+    padding: 40px 25px 30px 22px;
     color: #8e8e8e;
     padding-bottom: 14px;
+    position: relative;
 }
-.price-box{
-    display: inline-block;
-    margin-top: -15px;
+.price-box h4{
+    margin-top: -12px;
     overflow: hidden;
     padding-left: 3px;
     padding-right: 3px;
     background: #fff;
+    position: absolute;
+    top: 0;
 }
 .price-title{
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 700;
     color: #333;
-    text-transform: uppercase;
 
 }
 .price-content{
@@ -455,11 +476,15 @@ a.icon i{
 .price-btn i{
     padding-left: 10px;
 }
-.price-btn:hover{
+.price-box:hover .price-btn{
     color: #333;
     border-color: #333;
     font-weight: 700;
     background: transparent;
+}
+.price-box:hover{
+    border-color: #333;
+    cursor: pointer;
 }
 /*Price page end here */
 /*Buy Page*/
@@ -565,57 +590,22 @@ a.icon i{
     margin-top: 30px;
     padding-bottom: 90px;
 }
-.line{
-width: 100%;
-    height: 1px;
-    background: #8e8e8e;
-
+.contact-wrapper{
+    border: 1px solid #8e8e8e;
+    padding: 60px 0;
+    position: relative;
 }
-.contact-title{
-    /*text-align: center;*/
+
+.contact-wrapper h4{
+    position: absolute;
+    top: 0;
     display: inline-block;
-    width: 233px;
+    margin-top: -15px;
     background: #fff;
-    margin-top: -46px;
-    /* border: 1px solid red; */
-    /* margin-bottom: 15px; */
-    overflow: hidden;
-    
-
-}
-.contact-title h4 {
-    margin-bottom: 0;
-}
-.hr-text {
-  line-height: 1em;
-  position: relative;
-  outline: 0;
-  border: 0;
-  
-  text-align: center;
-  height: 1.5em;
-  opacity: 0.5;
-}
-.hr-text:before {
-  content: "";
-  background: linear-gradient(to right, transparent, #818078, transparent);
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 1px;
-}
-.hr-text:after {
-  content: attr(data-content);
-  position: relative;
-  display: inline-block;
-  color: black;
-  padding: 0 0.5em;
-  line-height: 1.5em;
-  /*color: 818078;*/
-  font-size: 30px;
-  font-family: 'Lato', sans-serif;
-  background-color: #fcfcfa;
+    padding: 0px 10px;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #333;
 }
 .contact-form .form-control{
     border:0;
