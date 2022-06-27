@@ -60,7 +60,7 @@
     <section class="banner-page align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-7">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -69,21 +69,21 @@
                       </div>
                       <div class="carousel-inner">
 
-                        <div class="carousel-item active">
+                        <div class="carousel-item active bs_item">
                           <div class="s_content">
                               <h2 class="b_title">We Have Talented Team</h2>
                     <p class="b_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. hello Lorem Ipsum has been the industry's stanard dummy text ever since the  hello  bossLorem Ipsum is simply dummy text of the printing</p>
                     <a href="#" class="btn learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item bs-item">
                           <div class="s_content">
                               <h2 class="b_title">We Have Talented Team</h2>
                     <p class="b_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. hello Lorem Ipsum has been the industry's stanard dummy text ever since the  hello  bossLorem Ipsum is simply dummy text of the printing</p>
                     <a href="#" class="btn learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>                          
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item bs-item">
                           <div class="s_content">
                               <h2 class="b_title">We Have Talented Team</h2>
                     <p class="b_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. hello Lorem Ipsum has been the industry's stanard dummy text ever since the  hello  bossLorem Ipsum is simply dummy text of the printing</p>
@@ -91,14 +91,16 @@
                           </div>                          
                         </div>
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+<!--                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class=" carousel-control-prev-icon s_icon" aria-hidden="true">Prev</span>
                         <span class="visually-hidden">Previous</span>
                       </button>
                       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="s_icon carousel-control-next-icon" aria-hidden="true">Next</span>
                         <span class="visually-hidden">Next</span>
-                      </button>
+                      </button> -->
+                      <button class="btn cbtn prevb"  data-bs-target="#carouselExampleControls" data-bs-slide="prev">Prev</button>
+                      <button class="btn nextb cbtn" data-bs-target="#carouselExampleControls" data-bs-slide="next">Next</button>
                     </div>
                     
                 </div>
@@ -107,16 +109,21 @@
     </section>
     <section class="intro-page">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="text-center intro-title">
-                        <div class="top-line"></div>
-                        <h4 class="text-uppercase">
-                            Welcome to Nipro
-                        </h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever he to since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not  centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the er including versions of Lorem Ipsum.</p>
-                    </div>
+            <div class="row justify-content-center"> <div class="col-lg-4">
+              <div class="text-center intro-title">
+                  <div class="top-line"></div>
+                  <h4 class="text-uppercase">
+                      Welcome to Nipro
+                  </h4>
                 </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                        <p class="text-center intro-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever he to since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not  centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the er including versions of Lorem Ipsum.</p>
+                </div>
+                
             </div>
             <div class="row">
                 <div class="col-3">
@@ -848,93 +855,112 @@
     </section>
     <section class="testimonial_page">
       <div class="container">
+        <div id="testimonial_carousel" class="carousel slide" data-bs-ride="true">
+          <div class="row">
+            <div class="col-lg-11 col-md-11">
+              <div class="testimonial-border">
+                <div class="carousel-inner">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-5">
+                          <div class="tes_img">
+                            <blockquote>
+                            <img class="img-fluid" src="img/team-2.jpg" alt="nipro">
+                          </blockquote>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-7">
+                          <div class="test_text">
+                            <h2>Al-Rayhan</h2>
+                            <h3>Co-Founder & COO</h3>
+                            <h4>DeviserWeb</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five <br>
+                            <br>
+                            Lcenturies, but also the leap into electronic typesetting, remaining essentially  like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-5">
+                          <div class="tes_img">
+                            <blockquote>
+                            <img class="img-fluid" src="img/team-1.jpg" alt="nipro">
+                          </blockquote>
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-7">
+                          <div class="test_text">
+                            <h2>ASHIFUL HAQUE PAPPU</h2>
+                            <h3>UI & Ux Designer</h3>
+                            <h4>DeviserWeb</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five <br>
+                            <br>
+                            Lcenturies, but also the leap into electronic typesetting, remaining essentially  like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 col-sm-5">
+                            <div class="tes_img">
+                              <blockquote>
+                              <img class="img-fluid" src="img/team-3.jpg" alt="nipro">
+                            </blockquote>
+                            </div>
+                          </div>
+                          <div class="col-lg-8 col-md-8 col-sm-7">
+                            <div class="test_text">
+                              <h2>SANTUSH DEB NATH</h2>
+                              <h3>Co-Founder & COO</h3>
+                              <h4>DeviserWeb</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five <br>
+                              <br>
+                              Lcenturies, but also the leap into electronic typesetting, remaining essentially  like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-1">
+              <div class="bg-light testimonial-slider-btn d-flex justify-content-between  flex-md-column align-items-center">
+                <button class="btn tsbtn testprv" type="button" data-bs-target="#testimonial_carousel" data-bs-slide="prev">
+               Prev
+              </button>
+              <span class="divider">|</span>
+                <button class="btn tsbtn testnext" type="button" data-bs-target="#testimonial_carousel" data-bs-slide="next">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div class="row">
           <div class="col-lg-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              
+              <div class="row">
+                <div class="col-lg-11">
+                  
+                </div>
+                
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="border-1">
-              <div class="row">
-                      <div class="col-lg-3">
-                        <div class="tes_img">
-                          <blockquote>
-                          <img class="img-fluid" src="img/team-2.jpg" alt="nipro">
-                        </blockquote>
-                        </div>
-                      </div>
-                      <div class="col-lg-9">
-                        <div class="test_text">
-                          <h2>Al-Rayhan</h2>
-                          <h3>Co-Founder & COO</h3>
-                          <h4>DeviserWeb</h4>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five <br>
-<br>
-Lcenturies, but also the leap into electronic typesetting, remaining essentially  like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="border-1">
-              <div class="row">
-                      <div class="col-lg-3">
-                        <div class="tes_img">
-                          <blockquote>
-                          <img class="img-fluid" src="img/team-1.jpg" alt="nipro">
-                        </blockquote>
-                        </div>
-                      </div>
-                      <div class="col-lg-9">
-                        <div class="test_text">
-                          <h2>ASHIFUL HAQUE PAPPU</h2>
-                          <h3>UI & Ux Designer</h3>
-                          <h4>DeviserWeb</h4>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five <br>
-<br>
-Lcenturies, but also the leap into electronic typesetting, remaining essentially  like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="border-1">
-              <div class="row">
-                      <div class="col-lg-3">
-                        <div class="tes_img">
-                          <blockquote>
-                          <img class="img-fluid" src="img/team-3.jpg" alt="nipro">
-                        </blockquote>
-                        </div>
-                      </div>
-                      <div class="col-lg-9">
-                        <div class="test_text">
-                          <h2>SANTUSH DEB NATH</h2>
-                          <h3>Co-Founder & COO</h3>
-                          <h4>DeviserWeb</h4>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five <br>
-<br>
-Lcenturies, but also the leap into electronic typesetting, remaining essentially  like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
+              </button> -->
             </div>
             
             </div>
