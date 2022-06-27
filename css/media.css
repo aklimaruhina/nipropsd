@@ -1,6 +1,64 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width:575.99px) {
-	
+	.navbar-brand.logo{
+		font-size: 26px;
+	}	
+	.s_content{
+		margin: 130px 0;
+	}
+	.b_title{
+		font-size: 36px;
+		font-weight: 500;
+	}
+	.b_para{
+		margin-top: 30px;margin-bottom: 40px;
+	}
+	.box-contaner{
+		/*margin-top: 50px;*/
+		padding-top: 30px;
+	}
+	.about-content h4{
+		margin-top: 25px;
+	}
+	.team-box{
+		margin-bottom: 30px;
+	}
+	.price-box{margin-bottom: 30px;padding-bottom: 35px;}
+	.buy-page p{
+		margin-bottom: 15px;text-align: center;
+	}
+	.buybtn{
+		text-align: center;
+	}
+	.testimonial_page{
+		padding: 60px 0;
+	}
+	.testimonial-slider-btn{
+		margin-top: 15px;
+	}
+	.text-text{margin-top: 30px;}
+	.divider{
+		transform: rotate(0deg);
+	}
+	.tsbtn{
+		margin:10px 0;
+		transform: rotate(0deg);
+	}
+	.contact-wrapper{
+		padding: 60px 30px;
+	}
+	.contact-wrapper h4{
+		font-size: 26px;
+	}
+	.copy{
+		text-align: center;
+	}
+	.footer-link .list-inline-item{
+		margin-right: 20px !important;
+	}
+	.contact-form .form-control{
+		margin-bottom: 15px;
+	}
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.99px) {
