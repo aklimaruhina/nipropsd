@@ -2,6 +2,14 @@
 @media (max-width:575.99px) {
 	.navbar-brand.logo{
 		font-size: 26px;
+	}
+	.intro-title{margin-bottom: 20px;}
+	.banner-page .carousel-indicators{
+		margin-left: 14%;
+	}
+	.intro-title h4{
+		margin-bottom: 20px;
+		text-transform: capitalize !important;
 	}	
 	.s_content{
 		margin: 130px 0;
@@ -24,12 +32,15 @@
 		margin: -58px auto 0;
 
 	}
+	.icon-name, .icon-title, .box-container p{
+		text-align: center;
+	}
 	.team-box{
 		margin-bottom: 30px;
 	}
 	.price-box{margin-bottom: 30px;padding-bottom: 35px;}
 	.buy-page p{
-		margin-bottom: 15px;text-align: center;
+		margin-bottom: 15px;text-align: center;text-transform: capitalize;
 	}
 	.buybtn{
 		text-align: center;
@@ -40,7 +51,7 @@
 	.testimonial-slider-btn{
 		margin-top: 15px;
 	}
-	.text-text{margin-top: 30px;}
+	.test_text{margin-top: 30px;}
 	.divider{
 		transform: rotate(0deg);
 	}
@@ -53,6 +64,7 @@
 	}
 	.contact-wrapper h4{
 		font-size: 26px;
+		text-transform: capitalize !important;
 	}
 	.copy{
 		text-align: center;
@@ -63,14 +75,36 @@
 	.contact-form .form-control{
 		margin-bottom: 15px;
 	}
+	.footer-social li a{margin-bottom: 18px;}
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.99px) {
-	
+	.b_title{
+		font-size: 50px;
+	}
+	.s_content{
+		margin: 110px 0;
+	}
+	.about-content h4{
+		font-size: 26px;
+	}
+	.team-box{margin-bottom: 25px;}
+	.team-details h4{font-size: 16px;}
+	.team-details p{
+		font-size: 14px;
+	}
+	.price-box{margin-bottom: 30px;}
+	.contact-wrapper{padding: 60px 40px;}
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.99px) {
-
+	.team-details h4{
+		font-size: 16px;text-transform: capitalize;
+	}
+	.team-details p{
+		font-size: 14px;
+	}
+	.b_title{font-size: 58px;}
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.99px) {
