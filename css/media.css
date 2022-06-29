@@ -10,7 +10,10 @@
 	.intro-title h4{
 		margin-bottom: 20px;
 		text-transform: capitalize !important;
-	}	
+	}
+	.dropdown-menu.show{margin-top: 24px;}
+	.dropdown-large	
+	{min-width: 400px;}
 	.s_content{
 		margin: 130px 0;
 	}
@@ -24,6 +27,9 @@
 	.box-contaner{
 		/*margin-top: 50px;*/
 		padding-top: 30px;
+	}
+	.box-details h4{
+		margin-top: 20px;
 	}
 	.about-content h4{
 		margin-top: 25px;
@@ -75,7 +81,12 @@
 	.contact-form .form-control{
 		margin-bottom: 15px;
 	}
-	.footer-social li a{margin-bottom: 18px;}
+	.footer-social li a{
+		margin-bottom: 18px;
+		font-size: 20px;
+	    width: 36px;
+	    height: 36px;
+	}
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -93,13 +104,16 @@
 	.team-details p{
 		font-size: 14px;
 	}
+	.dropdown-menu.show{margin-top: 0px;}
+	.dropdown-large	
+	{min-width: 600px;}
 	.price-box{margin-bottom: 30px;}
 	.contact-wrapper{padding: 60px 40px;}
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.99px) {
 	.team-details h4{
-		font-size: 16px;text-transform: capitalize;
+		/*font-size: 16px;text-transform: capitalize;*/
 	}
 	.team-details p{
 		font-size: 14px;
@@ -108,7 +122,9 @@
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.99px) {
- 
+ .team-details h4{
+ 	font-size: 15px;
+ }
 }
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) and (max-width: 1399.99px) {
