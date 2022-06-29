@@ -48,10 +48,36 @@ header{height: 55px;}
     font-weight: 400;
     color: #8e8e8e;
     text-transform: uppercase;
+    margin-right: 20px;
 }
 .navbar-nav.menubar .nav-item .nav-link.active{
     font-weight: 700;
     color:#333333;
+}
+.dropdown-large{
+    min-width: 500px;
+}
+.dropdown-toggle::after{
+    border:0;
+}
+.btn.searchbtn{
+    padding: 0;margin: 0;border: 0;background: none;
+}
+.dropdown-menu.show{
+    display: block;
+    margin-top: 22px;
+    border-radius: 0;
+    padding: 15px 10px;
+}
+.sbtn{
+    border: 0;
+    padding-left: 5px;
+    padding-right: 0;
+}
+.navbar-collapse{
+        background: lavender;
+    z-index: 111;
+    padding-left: 15px;
 }
 /*Navbar end here */
 /*Banner Start here */
@@ -228,6 +254,7 @@ p.intro-para{
 /*End Box section*/
 /*About section start*/
 .about-page{
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 .about-content{
@@ -587,7 +614,7 @@ a.icon i{
 /*Testimonial end here */
 /*Contact Us page */
 .contact-page{
-    margin-top: 30px;
+    padding-top: 50px;
     padding-bottom: 90px;
 }
 .contact-wrapper{
