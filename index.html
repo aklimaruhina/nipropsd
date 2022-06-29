@@ -15,15 +15,18 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#nipronav" data-bs-offset="50">
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light" id="nipronav">
           <div class="container">
             <a class="navbar-brand text-uppercase logo" href="#">Nipro Agency</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,22 +38,35 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Service</a>
+                  <a class="nav-link" href="#service">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a class="nav-link" href="#recent-work">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <button class="btn search_btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </form>
+              <div class="btn-group">
+                <button type="button" class="btn searchbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg-end dropdown-search dropdown-large">
+                  <form action="#" >
+                    <div class="row g-2">
+                      <div class="col-11">
+                        <input type="text" class="form-control s_input" placeholder="Search here">
+                      </div>
+                      <div class="col-1">
+                        <button type="submit" class="btn sbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -107,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="intro-page">
+    <section class="intro-page" id="service">
         <div class="container">
             <div class="row justify-content-center"> <div class="col-lg-4">
               <div class="text-center intro-title">
@@ -938,7 +954,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-page">
+    <section class="contact-page" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center mb-3">
@@ -1018,7 +1034,7 @@
             </p>
           </div>
           <div class="col-lg-6 col-sm-12">
-            <ul class="footer-link d-flex justify-content-md-end ustify-content-sm-center list-inline">
+            <ul class="d-flex flex-wrap footer-link justify-content-center justify-content-lg-end list-inline">
               <li class="list-inline-item"><a href="#">Suppport</a></li>
               <li class="list-inline-item"><a href="#">Sitemap</a></li>
               <li class="list-inline-item"><a href="#">Contact Us</a></li>
@@ -1029,6 +1045,24 @@
       </div>
     </footer>
     <!-- Footer page end here -->
+    <script src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('nipronav').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('nipronav').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
+</script>
 </body>
 </html>
