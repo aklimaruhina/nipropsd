@@ -75,7 +75,7 @@ header{height: 55px;}
     padding-right: 0;
 }
 .navbar-collapse{
-        background: lavender;
+/*         background: lavender; */
     z-index: 111;
     padding-left: 15px;
 }
